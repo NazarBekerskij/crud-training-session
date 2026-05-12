@@ -1,0 +1,33 @@
+{
+  "name": "crud-training-session",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+ "scripts": {
+  "dev": "npx parcel src/index.html",
+  "build": "parcel build src/index.html --public-url /crud-training-session/",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "server": "npx json-server students.json" 
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazarBekerskij/crud-training-session.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazarBekerskij/crud-training-session/issues"
+  },
+  "homepage": "https://github.com/NazarBekerskij/crud-training-session#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15",
+    "lodash": "^4.18.1",
+    "parcel": "^2.16.4"
+  },
+  "devDependencies": {
+    "console-browserify": "^1.2.0",
+    "gh-pages": "^6.3.0"
+  }
+}
