@@ -1,14 +1,22 @@
-import {method} from "lodash";
+import { method } from "lodash";
 
 
 const BASE_URL = 'http://localhost:3000/students';
 
 
-//запит на сервер
 export const getStudents = async () => {
     const res = await fetch((`${BASE_URL}`))
     return res.json()
 }
+
+// getStudents().then(res => console.log((res)))
+
+
+//запит на сервер
+
+// console.log(getStudents());
+
+
 
 
 //створення нового студента
