@@ -1,20 +1,14 @@
 const BASE_URL = 'http://localhost:3000/students';
 
 
-
+//запит на сервер
 export const getStudents = async () => {
     const res = await fetch((`${BASE_URL}`))
     return res.json()
 }
 
 
-
-
-
-
 //створення нового студента
-
-
 export const addStudent = async (studentData) => {
     const options = {
         method: "POST", // створення
@@ -30,8 +24,6 @@ export const addStudent = async (studentData) => {
 
 
 // оновлення даних
-
-
 export const updateStudent = async(id, updateData) => {
     const options = {
         method: "PATCH", 
@@ -42,6 +34,15 @@ export const updateStudent = async(id, updateData) => {
     return res.json();
 }
 
+
+
+
+//видалення
+export const deleteStudent = async (id) => {
+    const options = { method: "DELETE" };
+    const res = await fetch(`${BASE_URL}/${id}`, options)
+    return await res.json()
+}
 
 
 
