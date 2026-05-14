@@ -35,3 +35,14 @@ function createItemsMurckups(array){
     listRef.innerHTML = item
 }
 
+
+
+// getStudentsBtn.addEventListener("click", () => {getStudents().then(res => createItemsMurckups(res))})
+
+
+
+//отримує студентів
+getStudentsBtn.addEventListener("click", async () => {
+    const res = await getStudents()
+    createItemsMurckups(res)
+})
