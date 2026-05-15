@@ -32,7 +32,7 @@ export const addStudent = async (studentData) => {
         return result.json()
 }
 
-
+ 
 
 // оновлення даних
 export const updateStudent = async(id, updateData) => {

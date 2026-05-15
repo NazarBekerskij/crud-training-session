@@ -7,15 +7,6 @@
       "skills": "sdsd",
       "email": "bekerskijnazar9@gmail.com",
       "isEnrolled": true,
-      "id": "n_44r9OyHac"
-    },
-    {
-      "name": "sd",
-      "age": 1212,
-      "course": "asd",
-      "skills": "sdsd",
-      "email": "bekerskijnazar9@gmail.com",
-      "isEnrolled": true,
       "id": "yeS3y9PdBHQ"
     },
     {
@@ -37,13 +28,13 @@
       "id": "IoBT7V7uZpc"
     },
     {
-      "name": "андрій",
-      "age": 11111,
-      "course": "вавіаві",
-      "skills": "віавіа",
-      "email": "asdfdsf@gmail.com",
+      "name": "Назар Бекерський",
+      "age": 5555,
+      "course": "sdsad",
+      "skills": "asdasd",
+      "email": "bekerskijnazar9@gmail.com",
       "isEnrolled": true,
-      "id": "fRVxR9ufGNM"
+      "id": "-hp66aWNFp0"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

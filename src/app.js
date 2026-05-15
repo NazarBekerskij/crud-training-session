@@ -1,4 +1,4 @@
-// import { isElement } from "lodash";
+import { isElement } from "lodash";
 
 import { getStudents, addStudent, updateStudent, deleteStudent } from "./api/studentApi";
 
@@ -40,9 +40,49 @@ function createItemsMurckups(array){
 // getStudentsBtn.addEventListener("click", () => {getStudents().then(res => createItemsMurckups(res))})
 
 
-
-//отримує студентів
 getStudentsBtn.addEventListener("click", async () => {
     const res = await getStudents()
-    createItemsMurckups(res)
+    return createItemsMurckups(res)
 })
+
+
+
+
+
+form.addEventListener("submit", async (event) => {
+    event.preventDefault()
+
+
+    const elements = event.currentTarget.elements  //Ми отримуємо доступ до всіх полів вводу (input) у формі.
+
+    console.log(elements);
+    
+const studentData = {
+    name: elements.name.value,
+    age: Number(elements.age.value),
+    course: elements.course.value,
+    skills: elements.skills.value,
+    email: elements.email.value,
+    isEnrolled: elements.isEnrolled.checked, 
+}
+
+
+    if(currentId === null){
+        await addStudent(studentData)
+        const res = await getStudents()
+        createItemsMurckups(res)
+        form.reset()
+        return
+    }
+
+
+
+
+    updateStudent(currentId, studentData)
+    const res = await getStudents()
+    createItemsMurckups(res)
+    form.reset()
+})
+
+
+
