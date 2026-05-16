@@ -35,6 +35,15 @@
       "email": "bekerskijnazar9@gmail.com",
       "isEnrolled": true,
       "id": "-hp66aWNFp0"
+    },
+    {
+      "name": "Назар Бекерський",
+      "age": 12,
+      "course": "sdsad",
+      "skills": "asdasd",
+      "email": "bekerskijnazar9@gmail.com",
+      "isEnrolled": true,
+      "id": "vZ8VU8DLSOs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

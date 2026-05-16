@@ -57,8 +57,8 @@ form.addEventListener("submit", async (event) => {
 
     console.log(elements);
     
-const studentData = {
-    name: elements.name.value,
+    const studentData = {
+   и   name: elements.name.value,
     age: Number(elements.age.value),
     course: elements.course.value,
     skills: elements.skills.value,
